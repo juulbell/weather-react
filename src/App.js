@@ -1,18 +1,24 @@
 import React from "react";
-import logo from "./logo.svg";
 import Weather from "./Weather";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and scave to reload .
-        </p>
-        <Weather city="Frankfurt" />
-      </header>
+      <div className="container">
+        <Weather defaultCity="Frankfurt" />
+
+        <footer>
+          Coded by Helene J. Belling (
+          <a href="https://github.com/juulbell/weather-react" target="_blank">
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a href="https://serene-fermat-86cece.netlify.app/" target="_blank">
+            hosted on Netlify)
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
