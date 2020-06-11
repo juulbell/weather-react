@@ -1,21 +1,21 @@
 import React from "react";
 import Weather from "./Weather";
+import Skeleton from "./Skeleton";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Frankfurt" />
-
+        <Skeleton />
         <footer>
-          Coded by Helene J. Belling (
+          Coded by Helene J. Belling (open-sourced on{" "}
           <a href="https://github.com/juulbell/weather-react" target="_blank">
-            open-sourced on GitHub
+            GitHub
           </a>{" "}
-          and{" "}
+          and hosted on{" "}
           <a href="https://serene-fermat-86cece.netlify.app/" target="_blank">
-            hosted on Netlify)
+            Netlify)
           </a>
         </footer>
       </div>

@@ -12,7 +12,6 @@ export default function Weather(props) {
   axios.get(apiUrl).then(handleResponse);
   return (
     <p>
-      rege
       <ReactAnimatedWeather icon="FOG" color="green" size={48} animate={true} />
       <ReactAnimatedWeather
         icon="SLEET"
